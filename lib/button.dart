@@ -34,91 +34,191 @@ class Calculator extends StatelessWidget{
           ),
           Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-            TextButton(
-              onPressed:() {},
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-              ),
-              child: Text("1"),
-
-            ),
-
-            TextButton(
-              onPressed:() {},
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-              ),
-              child: Text("2"),
-
-            ),
                 TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                  ),
-                  child: Text("2"),
-
+                    onPressed:() {},
+                    child: Text("+",
+                        style: TextStyle(
+                          color: Colors.white,
+                        )
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
                 ),
-          ]),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                  TextButton(
+                    onPressed:() {},
+                    child: Text("1",
+                      style: TextStyle(
+                        color: Colors.white,
+                      )
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
                   ),
-                  child: Text("1"),
-
-                ),
-
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
+                  TextButton(
+                    onPressed:() {},
+                    child: Text("2",
+                      style: TextStyle(
+                      color: Colors.white,
+                      )
+                    ),
+                    style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
                   ),
-                  child: Text("2"),
-
-                ),
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    TextButton(
+                        onPressed:() {},
+                        child: Text("3",
+                            style: TextStyle(
+                              color: Colors.white,
+                            )
+                        ),
+                        style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          ),
                   ),
-                  child: Text("2"),
-
-                ),
-              ]),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                  ),
-                  child: Text("1"),
-
-                ),
-
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                  ),
-                  child: Text("2"),
-
-                ),
-                TextButton(
-                  onPressed:() {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                  ),
-                  child: Text("2"),
-
-                ),
-              ]),
-
-
-      ]),
-    ));
-  }
-}
+                ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("-",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("4",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("5",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("6",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                          ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("x",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("7",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("8",
+                          style: TextStyle(
+                            color: Colors.white,)
+                              ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("9",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                  ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("/",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("=",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("^",
+                          style: TextStyle(
+                            color: Colors.white,)
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed:() {},
+                      child: Text("sqrt",
+                          style: TextStyle(
+                            color: Colors.white,
+                          )
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                      ),
+                    ),
+                  ]),
+            ]),
+            ));
+          }
+        }
