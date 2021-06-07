@@ -13,7 +13,8 @@ class Calculator extends StatefulWidget{
 }
 
 class _CalculatorState extends State<Calculator> {
-   var display = "hello";
+
+  String display = '';
 
   @override
   Widget build(BuildContext context) {
@@ -35,16 +36,20 @@ class _CalculatorState extends State<Calculator> {
           child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Container(
-                  color: Colors.white,
                   padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 40.0),
+                  color: Colors.white,
                   margin: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 20.0),
-                  child: Text("hello")
+                  child: Text('$display'),
                 ),
-
                 Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '+';
+                          },
+                          );
+                        },
                         child: Text("+",
                             style: TextStyle(
                               color: Colors.white,
@@ -55,7 +60,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '1';
+                          },
+                          );
+                        },
                         child: Text("1",
                             style: TextStyle(
                               color: Colors.white,
@@ -66,7 +76,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '2';
+                          },
+                          );
+                        },
                         child: Text("2",
                             style: TextStyle(
                               color: Colors.white,
@@ -77,7 +92,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '3';
+                          },
+                          );
+                        },
                         child: Text("3",
                             style: TextStyle(
                               color: Colors.white,
@@ -91,7 +111,12 @@ class _CalculatorState extends State<Calculator> {
                 Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '-';
+                          },
+                          );
+                        },
                         child: Text("-",
                             style: TextStyle(
                               color: Colors.white,
@@ -102,7 +127,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '4';
+                          },
+                          );
+                        },
                         child: Text("4",
                             style: TextStyle(
                               color: Colors.white,
@@ -113,7 +143,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '5';
+                          },
+                          );
+                        },
                         child: Text("5",
                             style: TextStyle(
                               color: Colors.white,
@@ -124,7 +159,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '6';
+                          },
+                          );
+                        },
                         child: Text("6",
                             style: TextStyle(
                               color: Colors.white,
@@ -138,7 +178,12 @@ class _CalculatorState extends State<Calculator> {
                 Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += 'x';
+                          },
+                          );
+                        },
                         child: Text("x",
                             style: TextStyle(
                               color: Colors.white,
@@ -149,7 +194,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '7';
+                          },
+                          );
+                        },
                         child: Text("7",
                             style: TextStyle(
                               color: Colors.white,
@@ -160,7 +210,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '8';
+                          },
+                          );
+                        },
                         child: Text("8",
                             style: TextStyle(
                               color: Colors.white,)
@@ -170,7 +225,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '9';
+                          },
+                          );
+                        },
                         child: Text("9",
                             style: TextStyle(
                               color: Colors.white,
@@ -184,7 +244,12 @@ class _CalculatorState extends State<Calculator> {
                 Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '/';
+                          },
+                          );
+                        },
                         child: Text("/",
                             style: TextStyle(
                               color: Colors.white,
@@ -206,7 +271,12 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += '^';
+                          },
+                          );
+                        },
                         child: Text("^",
                             style: TextStyle(
                               color: Colors.white,)
@@ -216,8 +286,79 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          setState(() {
+                            display += 'sqrt(';
+                          },
+                          );
+                        },
+                        child: Text("sqrt",
+                            style: TextStyle(
+                              color: Colors.white,
+                            )
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                      ),
+                    ]),
+                Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      TextButton(
+                        onPressed:() {
+                          setState(() {
+                            display += '(';
+                          },
+                          );
+                        },
+                        child: Text('(',
+                            style: TextStyle(
+                              color: Colors.white,
+                            )
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed:() {
+                          setState(() {
+                            display += ')';
+                          },
+                          );
+                        },
+                        child: Text(")",
+                            style: TextStyle(
+                              color: Colors.white,
+                            )
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed:() {
+                          setState(() {
+                            display = '';
+                          },
+                          );
+                        },
                         child: Text("clear",
+                            style: TextStyle(
+                              color: Colors.white,)
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed:() {
+                          setState(() {
+                            display += '';
+                          },
+                          );
+                        },
+                        child: Text("",
                             style: TextStyle(
                               color: Colors.white,
                             )
@@ -231,5 +372,3 @@ class _CalculatorState extends State<Calculator> {
         ));
   }
 }
-
-
