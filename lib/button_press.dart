@@ -365,11 +365,11 @@ class _CalculatorState extends State<Calculator> {
                       TextButton(
                         onPressed:() {
                           setState(() {
-                            display += '';
+                            display += '0';
                           },
                           );
                         },
-                        child: Text("",
+                        child: Text("0",
                             style: TextStyle(
                               color: Colors.white,
                             )
