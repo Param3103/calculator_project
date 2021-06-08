@@ -260,7 +260,18 @@ class _CalculatorState extends State<Calculator> {
                         ),
                       ),
                       TextButton(
-                        onPressed:() {},
+                        onPressed:() {
+                          if ((display.split('')).contains('+')){
+                            num sum = 0;
+                            for (String i in display.split('+')) {
+                              sum += int.parse(i);
+                            };
+                            setState(() {
+                              display = '${sum}';
+                            });
+                          };
+
+                        },
                         child: Text("=",
                             style: TextStyle(
                               color: Colors.white,
