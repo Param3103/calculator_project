@@ -9,9 +9,10 @@ class Equation{
       int right_index = expression.indexOf(")");
       String new_exp = expression.substring(left_index + 1, right_index - 1);
       String val_new_exp = eval(new_exp);
-      expression.replaceAll (new_exp, val_new_exp);
-      return(expression);
+      expression.replaceAll(new_exp, val_new_exp);
+      return (expression);
     }
+
     if ((expression.split("")).contains("+")){
       // "21+4"
       num val = 0;

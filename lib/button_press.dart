@@ -297,11 +297,11 @@ class _CalculatorState extends State<Calculator> {
                       TextButton(
                         onPressed:() {
                           setState(() {
-                            display += 'sqrt(';
+                            display += '0';
                           },
                           );
                         },
-                        child: Text("sqrt",
+                        child: Text("0",
                             style: TextStyle(
                               color: Colors.white,
                             )
@@ -363,11 +363,11 @@ class _CalculatorState extends State<Calculator> {
                       TextButton(
                         onPressed:() {
                           setState(() {
-                            display += '0';
+                            display += '';
                           },
                           );
                         },
-                        child: Text("0",
+                        child: Text("",
                             style: TextStyle(
                               color: Colors.white,
                             )
