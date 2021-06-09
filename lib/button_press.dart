@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:calculator_project/equation_evaluator.dart';
+
 
 void main() =>
     runApp(MaterialApp(
@@ -15,7 +17,7 @@ class Calculator extends StatefulWidget{
 
 class _CalculatorState extends State<Calculator> {
 
-  String display = '';
+  var display = '';
 
   @override
   Widget build(BuildContext context) {
@@ -262,9 +264,10 @@ class _CalculatorState extends State<Calculator> {
                       ),
                       TextButton(
                         onPressed:() {
-                          display.split('');
-                          setState(() {
+                          // display is "2+3"
 
+                          setState(() {
+                            display = Equation.eval(display);
                           });
                         },
                         child: Text("=",
