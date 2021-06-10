@@ -33,13 +33,12 @@ class _CalculatorState extends State<Calculator> {
 
         body:
         Container(
-          padding: EdgeInsets.fromLTRB(40.0, 40.0, 30.0, 30.0),
           color: Colors.grey[400],
-          child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Expanded(
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 40.0),
+                  padding: EdgeInsets.all(16.0),
                   color: Colors.white,
                   child: Text('$display'),
                 ),
@@ -428,6 +427,6 @@ class _CalculatorState extends State<Calculator> {
                     ]),
                 ),
               ]),
-        ));
+          ));
   }
 }
