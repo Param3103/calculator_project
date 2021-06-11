@@ -34,7 +34,9 @@ class _CalculatorState extends State<Calculator> {
         body:
         Container(
           color: Colors.grey[400],
-            child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            child:
+                Expanded(
+    child: Column(mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Expanded(
                 child: Container(
@@ -427,6 +429,6 @@ class _CalculatorState extends State<Calculator> {
                     ]),
                 ),
               ]),
-          ));
+          )));
   }
 }
