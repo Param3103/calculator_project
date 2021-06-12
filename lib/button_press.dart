@@ -37,16 +37,22 @@ class _CalculatorState extends State<Calculator> {
             child:
                 Expanded(
     child: Column(mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Expanded(
                 child: Container(
                   padding: EdgeInsets.all(16.0),
                   color: Colors.white,
-                  child: Text('$display'),
+                  child: Text('$display',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 40,
+                      )),
                 ),
                 ),
                 Expanded(
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Expanded(
                         child: TextButton(
@@ -58,11 +64,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("+",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       )),
                       Expanded(
@@ -75,11 +82,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("1",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       )),
                       Expanded(
@@ -93,11 +101,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("2",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       )),
                       Expanded(
@@ -110,17 +119,19 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("3",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       )),
                     ]),
                 ),
                 Expanded(
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Expanded(
                         child:
@@ -133,11 +144,12 @@ class _CalculatorState extends State<Calculator> {
                             },
                             child: Text("-",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
+                                  fontSize: 40,
                                 )
                             ),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                             ),
                           ),
                       ),
@@ -151,11 +163,12 @@ class _CalculatorState extends State<Calculator> {
                             },
                             child: Text("4",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
+                                  fontSize: 40,
                                 )
                             ),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                             ),
                           ),
                       ),
@@ -169,11 +182,12 @@ class _CalculatorState extends State<Calculator> {
                             },
                             child: Text("5",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
+                                  fontSize: 40,
                                 )
                             ),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                             ),
                           ),
                           ),
@@ -187,11 +201,12 @@ class _CalculatorState extends State<Calculator> {
                             },
                             child: Text("6",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
+                                  fontSize: 40,
                                 )
                             ),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                             ),
                           ),
                           ),
@@ -200,6 +215,7 @@ class _CalculatorState extends State<Calculator> {
                 ),
                 Expanded(
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Expanded(
                       child: TextButton(
@@ -211,11 +227,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("x",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       )
                       ),
@@ -229,11 +246,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("7",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                       ),
@@ -247,10 +265,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("8",
                             style: TextStyle(
-                              color: Colors.white,)
+                                color: Colors.black,
+                                fontSize: 40,
+                            )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       ),
                       ),
@@ -264,11 +284,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("9",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                     ),
@@ -277,6 +298,7 @@ class _CalculatorState extends State<Calculator> {
                 ),
                 Expanded(
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Expanded(
                       child: TextButton(
@@ -288,11 +310,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("/",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                       ),
@@ -307,11 +330,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("=",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       ),
                       ),
@@ -324,11 +348,13 @@ class _CalculatorState extends State<Calculator> {
                           );
                         },
                         child: Text("^",
-                            style: TextStyle(
-                              color: Colors.white,)
-                        ),
+                           style: TextStyle(
+                             color: Colors.black,
+                             fontSize: 40,
+                           ),
+                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                       ),
@@ -342,11 +368,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("0",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       ),
                       )
@@ -354,6 +381,7 @@ class _CalculatorState extends State<Calculator> {
                 ),
                 Expanded(
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Expanded(
                       child: TextButton(
@@ -365,11 +393,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text('(',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       ),
                       ),
@@ -383,11 +412,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text(")",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                       ),
@@ -401,10 +431,11 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("clear",
                             style: TextStyle(
-                              color: Colors.white,)
-                        ),
+                                 color: Colors.black,
+                                fontSize: 40,
+                           )),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
                         ),
                       ),
                       ),
@@ -418,11 +449,12 @@ class _CalculatorState extends State<Calculator> {
                         },
                         child: Text("",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
+                              fontSize: 40,
                             )
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
                         ),
                       ),
                       ),
