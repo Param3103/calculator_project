@@ -35,7 +35,7 @@ class _CalculatorState extends State<Calculator> {
         Container(
           color: Colors.grey[400],
             child:
-                Expanded(
+            Expanded(
     child: Column(mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[

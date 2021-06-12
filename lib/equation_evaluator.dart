@@ -7,10 +7,11 @@ class Equation{
       //(2+3)*4
       int left_index = expression.indexOf("(");
       int right_index = expression.indexOf(")");
-      String new_exp = expression.substring(left_index + 1, right_index - 1);
+      String temp_exp = expression.substring(left_index, right_index+1);
+      String new_exp = expression.substring(left_index + 1, right_index);
       String val_new_exp = eval(new_exp);
-      expression.replaceAll(new_exp, val_new_exp);
-      return (expression);
+      String expression2 = expression.replaceAll(temp_exp, val_new_exp);
+      return (eval(expression2));
     }
 
     if ((expression.split("")).contains("+")){
@@ -24,7 +25,6 @@ class Equation{
       String c = expression[1];
       String d = eval(c);
       val += int.parse(d);
-      print(val.toString());
       return(val.toString());
     }
     else if ((expression.split("")).contains("-")){
@@ -38,7 +38,6 @@ class Equation{
       String c = expression[1];
       String d = eval(c);
       val -= int.parse(d);
-      print(val.toString());
       return(val.toString());
     }
     else if ((expression.split("")).contains("x")){
@@ -52,7 +51,6 @@ class Equation{
       String c = expression[1];
       String d = eval(c);
       val *= int.parse(d);
-      print(val.toString());
       return(val.toString());
     }
     else if ((expression.split("")).contains("/")){
@@ -66,7 +64,6 @@ class Equation{
       String c = expression[1];
       String d = eval(c);
       val /= int.parse(d);
-      print(val.toString());
       return(val.toString());
     }
     else if ((expression.split("")).contains("^")){
@@ -80,7 +77,6 @@ class Equation{
       String c = expression[1];
       String d = eval(c);
       val = pow(val, int.parse(d));
-      print(val.toString());
       return(val.toString());
     }
     else{
