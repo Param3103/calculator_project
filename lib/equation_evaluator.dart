@@ -11,6 +11,7 @@ class Equation{
       String new_exp = expression.substring(left_index + 1, right_index);
       String val_new_exp = eval(new_exp);
       String expression2 = expression.replaceAll(temp_exp, val_new_exp);
+      print(expression2);
       return (eval(expression2));
     }
 
@@ -76,6 +77,7 @@ class Equation{
       val += int.parse(b);
       String c = expression[1];
       String d = eval(c);
+      print(int.parse(d));
       val = pow(val, int.parse(d));
       return(val.toString());
     }
